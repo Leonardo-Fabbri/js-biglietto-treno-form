@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: red;
+    color: white;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+h3 {
+    color: red;
+    margin-bottom: 15px;
+}
+.board {
+    width:60% ;
+    height: 200px;
+    background-color: wheat;
+    border: 1px solid black;
+    border-radius: 4px;
+    margin: auto;
+}
+.flex {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+    position: relative;
+    margin-bottom: 40px;
+}
+.board .flex .bloco {
+   height: 40%;
+   width: 300px;
+   padding: 10px;
+   text-align: center;
+}
+.bottoni {
+    text-align: center;
+    padding: 20px;
+}
+#iltuobiglietto {
+    width:  70%;
+    height: 250px;
+    margin: auto;
+    background-color: red;
+    /* border: 1px solid blue; */
+    border-radius: 4px;
+    margin-top: 50px;
+    margin: auto;
+    /* display: ; */
+}
+#iltuobiglietto h2 {
+    color: white;
+    text-align: center;
+}
+.stampato {
+    width: 100%;
+    height: 250px;
+    background-color: teal;
+    border: 1px solid black;
+    border-radius: 4px;
+    margin: auto;
+    color: black;
+} 
+#res_name , #res_km ,  #res_age {
+    float: left;
+    font-size: 20px;
+    margin-left: 60px;
+}
+
+
+
+

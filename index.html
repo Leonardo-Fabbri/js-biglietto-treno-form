@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>CALCOLA IL PREZZO DEL TUO BILGLIETTO</h1>
+    <div class="board">
+        <div class="flex">
+            <div class="blocco">
+                <h3>Nome e Cognome</h3>
+                <input id="name" type="text" placeholder="INSERIRE NOME">
+            </div>
+             <div class="blocco">
+                 <h3>Kilometri da percorrere</h3>
+                 <input id="numero_km" type="text" placeholder="INSERIRE N. KM">
+             </div>
+             <div class="blocco">
+                 <h3>Fascia d'età</h3>
+                 <select id="age">
+                     <option  value="young">(0-17)</option>
+                     <option value="middleAge">(18-65 anni)</option>
+                     <option  value="over65">(65-...)</option>
+                 </select>
+             </div>
+
+        </div>
+        <div class="bottoni">
+            <button id="genera_biglietto">Genera</button>
+            <button>Annulla</button>
+        </div>
+    </div>
+
+    <div id="iltuobiglietto">
+        <h2>IL TUO BIGLIETTO</h2>
+        <div class="stampato">
+            <p>DETTAGLIO PASSAGGERI</p>
+            <hr>
+            <p id="res_name"></p>
+            <p id="res_km"></p>
+            <p id="res_age"></p>
+            <p id="res_prezzo"></p>
+            <hr>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
