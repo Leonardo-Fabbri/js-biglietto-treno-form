@@ -50,7 +50,12 @@ h3 {
     border-radius: 4px;
     margin-top: 50px;
     margin: auto;
-    /* display: ; */
+}
+.hidden {
+    display: none;
+}
+.show {
+    display: block;
 }
 #iltuobiglietto h2 {
     color: white;
@@ -66,9 +71,62 @@ h3 {
     color: black;
 } 
 #res_name , #res_km ,  #res_age {
-    float: left;
     font-size: 20px;
-    margin-left: 60px;
+}
+
+#res_name {
+    margin-top: 40px;
+    margin-right:50px ;
+    color:white;
+}
+#res_km {
+    margin-top: 55px;
+    margin-right: 50px;
+}
+#res_age {
+    margin-top: 55px;
+    margin-right: 50px;
+}
+#res_prezzo {
+    margin-top: 55px;
+    margin-right: 50px;
+}
+.age {
+    width: 250px;
+    height: 228px;
+    background-color: rgb(255, 255, 153);
+    float: left;
+    padding-top: 20px ;
+    padding-left: 20px;
+}
+.age p {
+    color:lightgrey;
+}
+.prezzo {
+    float: left;
+    padding-top: 20px ;
+    padding-left: 20px;
+    width: 173px;
+    height: 228px;
+    background-color: white;
+}
+.KM {
+    width: 400px;
+    height: 228px;
+    background-color: white;
+    color: lightgray;
+    float: left;
+    padding-top: 20px ;
+    padding-left: 20px;
+
+}
+.quadrato-nome {
+    width: 250px;
+    height: 228px;
+    padding-top: 20px;
+    padding-left: 20px;
+    background-color: lightgrey;
+    float: left;
 }
 
 

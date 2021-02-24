@@ -1,13 +1,9 @@
 /*indentazione= shift+alt+f*/
-var name=("");
 //euro x km.
 const PREZZO_KM=0.21;
 //sconti
 var over65= 0.6;
 var  young= 0.8;
-var middleAge;
-// var km= getElementById("numero_km")
-
 
 
 
@@ -19,35 +15,26 @@ document.getElementById("genera_biglietto").addEventListener("click", function (
     var age= document.getElementById("age").value;
     console.log(age);
 
-    if (over65>65){
-        console.log(km*PREZZO_KM*over65);
-        document.getElementById("res_prezzo").innerHTML=km*PREZZO_KM*over65+("prezzo")+(" ")+("scontato");
-        
-    } else if (young<18) {
-        console.log(km*PREZZO_KM*young);
-        document.getElementById("res_prezzo").innerHTML=km*PREZZO_KM*young+("prezzo")+(" ")+("scontato");
-      
-    } else{
-        console.log(km*PREZZO_KM)
-        document.getElementById("res_prezzo").innerHTML=PREZZO_KM*km+("euro");
+    if (age=="anziani"){
+        prezzo_biglietto= km * PREZZO_KM*over65;
+        console.log(km * PREZZO_KM*over65);
+        document.getElementById("res_prezzo").innerHTML=km * PREZZO_KM*over65+("prezzo")+(" ")+("scontato");
+    } else if (age=="minorenni") {
+        console.log(km * PREZZO_KM*young);
+        document.getElementById("res_prezzo").innerHTML=km * PREZZO_KM*young+("prezzo")+(" ")+("scontato");
+    } else {
+        document.getElementById("res_prezzo").innerHTML=km * PREZZO_KM+("euro");
     
     }
-    // console.log("fineclick");
-
+    
     document.getElementById("res_name").innerHTML=name;
     document.getElementById("res_km").innerHTML=km+("km");
     document.getElementById("res_age").innerHTML=age;
-    
-   
-    
-    
-    
-
+    document.getElementById("iltuobiglietto").className="show";
 }  
 );
+document.getElementById("annulla").addEventListener("click", function () {
+    document.getElementById("iltuobiglietto").className="hidden";
 
-
-
-
-
-
+}
+)
